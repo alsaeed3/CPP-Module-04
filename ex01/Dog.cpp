@@ -6,7 +6,7 @@
 /*   By: alsaeed <alsaeed@student.42abudhabi.ae>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/24 19:17:16 by alsaeed           #+#    #+#             */
-/*   Updated: 2024/04/27 21:40:25 by alsaeed          ###   ########.fr       */
+/*   Updated: 2024/04/27 21:52:01 by alsaeed          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,4 +50,16 @@ void	Dog::makeSound( void ) const {
 	std::cout << "Barkkk!!!" << std::endl;
 
 	return;	
+}
+
+Brain*	Dog::getBrain( void ) const {
+	
+	return this->_brain;
+}
+
+void	Dog::changeIdea( int i, std::string idea ) {
+
+	this->_brain->modifyIdea( i, idea );
+
+	return;
 }

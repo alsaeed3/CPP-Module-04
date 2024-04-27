@@ -6,7 +6,7 @@
 /*   By: alsaeed <alsaeed@student.42abudhabi.ae>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/24 19:17:35 by alsaeed           #+#    #+#             */
-/*   Updated: 2024/04/27 21:40:20 by alsaeed          ###   ########.fr       */
+/*   Updated: 2024/04/27 21:54:53 by alsaeed          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,3 +51,17 @@ void	Cat::makeSound( void ) const {
 
 	return;	
 }
+
+Brain*	Cat::getBrain( void ) const {
+	
+	return this->_brain;
+}
+
+void	Cat::changeIdea( int i, std::string idea ) {
+
+	this->_brain->modifyIdea( i, idea );
+
+	return;
+}
+
+std::string	

@@ -6,7 +6,7 @@
 /*   By: alsaeed <alsaeed@student.42abudhabi.ae>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/25 20:00:44 by alsaeed           #+#    #+#             */
-/*   Updated: 2024/04/27 15:19:54 by alsaeed          ###   ########.fr       */
+/*   Updated: 2024/04/27 21:40:36 by alsaeed          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ WrongCat::WrongCat( const WrongCat& source ) : WrongAnimal( "WrongCat" ) {
 
 WrongCat&	WrongCat::operator=( const WrongCat& source ) {
 
-	std::cout << "WrongCat Copy Assinment Operator has been called" << std::endl;
+	std::cout << "WrongCat Copy Assignment Operator has been called" << std::endl;
 
 	if ( this != &source )
 		this->_type = source._type;
