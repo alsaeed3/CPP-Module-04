@@ -6,7 +6,7 @@
 #    By: alsaeed <alsaeed@student.42abudhabi.ae>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/04/24 19:15:16 by alsaeed           #+#    #+#              #
-#    Updated: 2024/04/25 17:26:30 by alsaeed          ###   ########.fr        #
+#    Updated: 2024/04/27 14:21:59 by alsaeed          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -16,7 +16,7 @@ CXXFLAGS = -Wall -Wextra -Werror -std=c++98
 
 NAME = animal
 
-SRCS = Animal.cpp Dog.cpp Cat.cpp
+SRCS = Animal.cpp Dog.cpp Cat.cpp WrongAnimal.cpp WrongCat.cpp
 
 OBJS_DIR = objs
 

@@ -6,7 +6,7 @@
 /*   By: alsaeed <alsaeed@student.42abudhabi.ae>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/24 19:17:35 by alsaeed           #+#    #+#             */
-/*   Updated: 2024/04/25 19:56:54 by alsaeed          ###   ########.fr       */
+/*   Updated: 2024/04/27 14:30:41 by alsaeed          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,33 +14,33 @@
 
 Cat::Cat( void ) : Animal( "Cat" ) {
 
-	std::cout << this->getType() << "DEFAULT Cat Constructor has been called" << std::endl;
+	std::cout << "Cat Default Constructor has been called" << std::endl;
 
 	return;	
 }
 
-Cat::Cat( const Cat& source ) {
+Cat::Cat( const Cat& source_object ) : Animal( "Cat" ) {
 
-	std::cout << this->getType() << " Cat Copy Constructor has been called" << std::endl;
+	std::cout << "Cat Copy Constructor has been called" << std::endl;
 
-	*this = source;
+	*this = source_object;
 
 	return;	
 }
 
-Cat&	Cat::operator=( const Cat& source ) {
+Cat&	Cat::operator=( const Cat& source_object ) {
 
-	std::cout << this->getType() << " Cat Copy Assinment Operator has been called" << std::endl;
+	std::cout << "Cat Copy Assinment Operator has been called" << std::endl;
 
-	if ( this != &source )
-		this->type = source.type;
+	if ( this != &source_object )
+		this->_type = source_object._type;
 
 	return *this;	
 }
 
 Cat::~Cat( void ) {
 
-	std::cout << this->getType() << " Cat Destructor has been called" << std::endl;
+	std::cout << "Cat Destructor has been called" << std::endl;
 
 	return;	
 }

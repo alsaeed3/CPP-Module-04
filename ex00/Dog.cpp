@@ -6,7 +6,7 @@
 /*   By: alsaeed <alsaeed@student.42abudhabi.ae>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/24 19:17:16 by alsaeed           #+#    #+#             */
-/*   Updated: 2024/04/25 19:58:38 by alsaeed          ###   ########.fr       */
+/*   Updated: 2024/04/27 14:29:53 by alsaeed          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,33 +14,33 @@
 
 Dog::Dog( void ) : Animal( "Dog" ) {
 
-	std::cout << this->getType() << "DEFAULT Dog Constructor has been called" << std::endl;
+	std::cout << "Dog Default Constructor has been called" << std::endl;
 
 	return;	
 }
 
-Dog::Dog( const Dog& source ) {
+Dog::Dog( const Dog& source_object ) : Animal( "Dog" ) {
 
-	std::cout << this->getType() << " Dog Copy Constructor has been called" << std::endl;
+	std::cout << "Dog Copy Constructor has been called" << std::endl;
 
-	*this = source;
+	*this = source_object;
 
 	return;	
 }
 
-Dog&	Dog::operator=( const Dog& source ) {
+Dog&	Dog::operator=( const Dog& source_object ) {
 
-	std::cout << this->getType() << " Dog Copy Assinment Operator has been called" << std::endl;
+	std::cout << "Dog Copy Assinment Operator has been called" << std::endl;
 
-	if ( this != &source )
-		this->type = source.type;
+	if ( this != &source_object )
+		this->_type = source_object._type;
 
 	return *this;	
 }
 
 Dog::~Dog( void ) {
 
-	std::cout << this->getType() << " Dog Destructor has been called" << std::endl;
+	std::cout << "Dog Destructor has been called" << std::endl;
 
 	return;	
 }
