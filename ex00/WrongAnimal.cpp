@@ -6,7 +6,7 @@
 /*   By: alsaeed <alsaeed@student.42abudhabi.ae>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/25 20:00:13 by alsaeed           #+#    #+#             */
-/*   Updated: 2024/04/27 14:44:15 by alsaeed          ###   ########.fr       */
+/*   Updated: 2024/04/27 15:16:20 by alsaeed          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,14 +14,14 @@
 
 WrongAnimal::WrongAnimal( void ) : _type( "Default" ) {
 
-	std::cout << "Default WrongAnimal Constructor has been called" << std::endl;
+	std::cout << "[ Default ] WrongAnimal Constructor has been called" << std::endl;
 
 	return;
 }
 
 WrongAnimal::WrongAnimal( std::string type ) : _type( type ) {
 
-	std::cout << this->getType() << "WrongAnimal Constructor has been called" << std::endl;
+	std::cout << "[ " << this->getType() << " ] WrongAnimal Constructor has been called" << std::endl;
 
 	return;
 }
@@ -47,7 +47,7 @@ WrongAnimal&			WrongAnimal::operator=( const WrongAnimal& source_object ) {
 
 WrongAnimal::~WrongAnimal( void ) {
 	
-	std::cout << "WrongAnimal Destructor has been called" << std::endl;
+	std::cout << "[ " << this->getType() << " ] WrongAnimal Destructor has been called" << std::endl;
 
 	return;
 }

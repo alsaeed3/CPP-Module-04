@@ -6,7 +6,7 @@
 /*   By: alsaeed <alsaeed@student.42abudhabi.ae>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/24 19:17:16 by alsaeed           #+#    #+#             */
-/*   Updated: 2024/04/27 14:29:53 by alsaeed          ###   ########.fr       */
+/*   Updated: 2024/04/27 15:15:44 by alsaeed          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 Dog::Dog( void ) : Animal( "Dog" ) {
 
-	std::cout << "Dog Default Constructor has been called" << std::endl;
+	std::cout << "Dog Constructor has been called" << std::endl;
 
 	return;	
 }

@@ -6,7 +6,7 @@
 /*   By: alsaeed <alsaeed@student.42abudhabi.ae>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/25 20:00:44 by alsaeed           #+#    #+#             */
-/*   Updated: 2024/04/27 14:31:19 by alsaeed          ###   ########.fr       */
+/*   Updated: 2024/04/27 15:19:54 by alsaeed          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 WrongCat::WrongCat( void ) : WrongAnimal( "WrongCat" ) {
 
-	std::cout << "WrongCat Default Constructor has been called" << std::endl;
+	std::cout << "WrongCat Constructor has been called" << std::endl;
 
 	return;	
 }

@@ -6,7 +6,7 @@
 /*   By: alsaeed <alsaeed@student.42abudhabi.ae>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/24 19:16:41 by alsaeed           #+#    #+#             */
-/*   Updated: 2024/04/27 14:44:27 by alsaeed          ###   ########.fr       */
+/*   Updated: 2024/04/27 15:16:07 by alsaeed          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,14 +14,14 @@
 
 Animal::Animal( void ) : _type( "Default" ) {
 
-	std::cout << "Default Animal Constructor has been called" << std::endl;
+	std::cout << "[ Default ] Animal Constructor has been called" << std::endl;
 
 	return;
 }
 
 Animal::Animal( std::string type ) : _type( type ) {
 
-	std::cout << this->getType() << " Animal Constructor has been called" << std::endl;
+	std::cout << "[ " << this->getType() << " ] Animal Constructor has been called" << std::endl;
 
 	return;
 }
@@ -47,7 +47,7 @@ Animal&			Animal::operator=( const Animal& source_object ) {
 
 Animal::~Animal( void ) {
 	
-	std::cout << "Animal Destructor has been called" << std::endl;
+	std::cout << "[ " << this->getType() << " ] Animal Destructor has been called" << std::endl;
 
 	return;
 }

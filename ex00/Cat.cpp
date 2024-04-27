@@ -6,7 +6,7 @@
 /*   By: alsaeed <alsaeed@student.42abudhabi.ae>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/24 19:17:35 by alsaeed           #+#    #+#             */
-/*   Updated: 2024/04/27 14:30:41 by alsaeed          ###   ########.fr       */
+/*   Updated: 2024/04/27 15:15:31 by alsaeed          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 Cat::Cat( void ) : Animal( "Cat" ) {
 
-	std::cout << "Cat Default Constructor has been called" << std::endl;
+	std::cout << "Cat Constructor has been called" << std::endl;
 
 	return;	
 }
