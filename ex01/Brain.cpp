@@ -6,7 +6,7 @@
 /*   By: alsaeed <alsaeed@student.42abudhabi.ae>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/27 19:33:19 by alsaeed           #+#    #+#             */
-/*   Updated: 2024/04/28 16:20:40 by alsaeed          ###   ########.fr       */
+/*   Updated: 2024/04/28 16:30:56 by alsaeed          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,13 +48,9 @@ Brain&	Brain::operator=( const Brain& source_object ) {
 	
 	std::cout << "Brain Copy Assignment Operator has been called" << std::endl;
 	
-	if ( this != &source_object ) {
-
-		for ( int i = 0; i < 10; i++ ) {
-		
+	if ( this != &source_object )
+		for ( int i = 0; i < 10; i++ ) 
 			this->ideas[ i ] = source_object.ideas[ i ];
-		}
-	}
 
 	return *this;
 }

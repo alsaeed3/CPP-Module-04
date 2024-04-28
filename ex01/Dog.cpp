@@ -6,13 +6,13 @@
 /*   By: alsaeed <alsaeed@student.42abudhabi.ae>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/24 19:17:16 by alsaeed           #+#    #+#             */
-/*   Updated: 2024/04/28 16:10:01 by alsaeed          ###   ########.fr       */
+/*   Updated: 2024/04/28 16:30:05 by alsaeed          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Dog.hpp"
 
-Dog::Dog( void ) : Animal( "Dog" ), _brain(new Brain()) {
+Dog::Dog( void ) : Animal( "Dog" ), _brain( new Brain() ) {
 
 	std::cout << "Dog Constructor has been called" << std::endl;
 

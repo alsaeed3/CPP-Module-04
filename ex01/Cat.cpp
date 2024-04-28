@@ -6,13 +6,13 @@
 /*   By: alsaeed <alsaeed@student.42abudhabi.ae>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/24 19:17:35 by alsaeed           #+#    #+#             */
-/*   Updated: 2024/04/28 16:10:14 by alsaeed          ###   ########.fr       */
+/*   Updated: 2024/04/28 16:29:54 by alsaeed          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Cat.hpp"
 
-Cat::Cat( void ) : Animal( "Cat" ), _brain(new Brain()) {
+Cat::Cat( void ) : Animal( "Cat" ), _brain( new Brain() ) {
 
 	std::cout << "Cat Constructor has been called" << std::endl;
 
