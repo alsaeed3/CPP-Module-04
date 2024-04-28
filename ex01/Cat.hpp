@@ -6,7 +6,7 @@
 /*   By: alsaeed <alsaeed@student.42abudhabi.ae>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/24 19:17:24 by alsaeed           #+#    #+#             */
-/*   Updated: 2024/04/27 21:52:40 by alsaeed          ###   ########.fr       */
+/*   Updated: 2024/04/28 15:47:29 by alsaeed          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,12 +27,13 @@ class Cat : public Animal {
 
 		Cat( void );
 		Cat( const Cat& source_object );
-		Cat&	operator=( const Cat& source_object );
+		Cat&		operator=( const Cat& source_object );
 		~Cat( void );
 
-		void	makeSound( void ) const;
-		Brain*	getBrain( void ) const;
-		void	changeIdea( int i, std::string idea );
+		void		makeSound( void ) const;
+		Brain*		getBrain( void ) const;
+		void		changeIdea( int i, std::string idea );
+		std::string	getIdea( int i ) const;
 };
 
 #endif

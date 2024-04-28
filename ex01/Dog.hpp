@@ -6,7 +6,7 @@
 /*   By: alsaeed <alsaeed@student.42abudhabi.ae>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/24 19:16:54 by alsaeed           #+#    #+#             */
-/*   Updated: 2024/04/27 21:51:04 by alsaeed          ###   ########.fr       */
+/*   Updated: 2024/04/28 15:47:38 by alsaeed          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,12 +27,13 @@ class Dog : public Animal {
 
 		Dog( void );
 		Dog( const Dog& source_object );
-		Dog&	operator=( const Dog& source_object );
+		Dog&		operator=( const Dog& source_object );
 		~Dog( void );
 
-		void	makeSound( void ) const;
-		Brain*	getBrain( void ) const;
-		void	changeIdea( int i, std::string idea );
+		void		makeSound( void ) const;
+		Brain*		getBrain( void ) const;
+		void		changeIdea( int i, std::string idea );
+		std::string	getIdea( int i ) const;
 };
 
 #endif

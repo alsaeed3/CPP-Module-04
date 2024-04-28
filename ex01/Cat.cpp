@@ -6,13 +6,13 @@
 /*   By: alsaeed <alsaeed@student.42abudhabi.ae>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/24 19:17:35 by alsaeed           #+#    #+#             */
-/*   Updated: 2024/04/27 21:54:53 by alsaeed          ###   ########.fr       */
+/*   Updated: 2024/04/28 16:10:14 by alsaeed          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Cat.hpp"
 
-Cat::Cat( void ) : Animal( "Cat" ) {
+Cat::Cat( void ) : Animal( "Cat" ), _brain(new Brain()) {
 
 	std::cout << "Cat Constructor has been called" << std::endl;
 
@@ -32,8 +32,12 @@ Cat&	Cat::operator=( const Cat& source_object ) {
 
 	std::cout << "Cat Copy Assignment Operator has been called" << std::endl;
 
-	if ( this != &source_object )
+	if ( this != &source_object ) {
+		
 		this->_type = source_object._type;
+		this->_brain = new Brain();
+		this->_brain->setIdeas(source_object._brain->getIdeas());
+	}
 
 	return *this;	
 }
@@ -41,7 +45,9 @@ Cat&	Cat::operator=( const Cat& source_object ) {
 Cat::~Cat( void ) {
 
 	std::cout << "Cat Destructor has been called" << std::endl;
-
+	
+	delete this->_brain;
+	
 	return;	
 }
 
@@ -59,9 +65,12 @@ Brain*	Cat::getBrain( void ) const {
 
 void	Cat::changeIdea( int i, std::string idea ) {
 
-	this->_brain->modifyIdea( i, idea );
+	this->_brain->ideas[ i ] = idea;
 
 	return;
 }
 
-std::string	
+std::string	Cat::getIdea( int i ) const {
+
+	return this->_brain->ideas[i];
+}

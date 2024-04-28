@@ -6,13 +6,13 @@
 /*   By: alsaeed <alsaeed@student.42abudhabi.ae>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/24 19:17:16 by alsaeed           #+#    #+#             */
-/*   Updated: 2024/04/27 21:52:01 by alsaeed          ###   ########.fr       */
+/*   Updated: 2024/04/28 16:10:01 by alsaeed          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Dog.hpp"
 
-Dog::Dog( void ) : Animal( "Dog" ) {
+Dog::Dog( void ) : Animal( "Dog" ), _brain(new Brain()) {
 
 	std::cout << "Dog Constructor has been called" << std::endl;
 
@@ -32,8 +32,12 @@ Dog&	Dog::operator=( const Dog& source_object ) {
 
 	std::cout << "Dog Copy Assignment Operator has been called" << std::endl;
 
-	if ( this != &source_object )
+	if ( this != &source_object ) {
+		
 		this->_type = source_object._type;
+		this->_brain = new Brain();
+		this->_brain->setIdeas(source_object._brain->getIdeas());
+	}
 
 	return *this;	
 }
@@ -41,6 +45,8 @@ Dog&	Dog::operator=( const Dog& source_object ) {
 Dog::~Dog( void ) {
 
 	std::cout << "Dog Destructor has been called" << std::endl;
+
+	delete this->_brain;
 
 	return;	
 }
@@ -59,7 +65,12 @@ Brain*	Dog::getBrain( void ) const {
 
 void	Dog::changeIdea( int i, std::string idea ) {
 
-	this->_brain->modifyIdea( i, idea );
+	this->_brain->ideas[ i ] = idea;
 
 	return;
+}
+
+std::string	Dog::getIdea( int i ) const {
+
+	return this->_brain->ideas[i];
 }

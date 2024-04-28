@@ -6,7 +6,7 @@
 /*   By: alsaeed <alsaeed@student.42abudhabi.ae>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/27 16:35:12 by alsaeed           #+#    #+#             */
-/*   Updated: 2024/04/27 21:44:17 by alsaeed          ###   ########.fr       */
+/*   Updated: 2024/04/28 16:20:46 by alsaeed          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,6 @@ class Brain {
 		void			setIdeas( std::string* ideas );
 		void			printIdeas( void ) const;
 		void			resetIdeas( void );
-		void			modifyIdea( int i, std::string new_idea );
 };
 
 #endif
