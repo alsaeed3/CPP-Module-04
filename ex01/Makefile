@@ -6,13 +6,13 @@
 #    By: alsaeed <alsaeed@student.42abudhabi.ae>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/04/24 19:15:16 by alsaeed           #+#    #+#              #
-#    Updated: 2024/04/28 16:27:38 by alsaeed          ###   ########.fr        #
+#    Updated: 2024/05/01 15:57:29 by alsaeed          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 CXX = c++
 
-CXXFLAGS = -Wall -Wextra -Werror -std=c++98 -g3 -fsanitize=leak
+CXXFLAGS = -Wall -Wextra -Werror -std=c++98
 
 NAME = animal
 

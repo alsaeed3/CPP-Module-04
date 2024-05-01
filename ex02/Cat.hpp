@@ -6,7 +6,7 @@
 /*   By: alsaeed <alsaeed@student.42abudhabi.ae>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/24 19:17:24 by alsaeed           #+#    #+#             */
-/*   Updated: 2024/04/28 16:48:38 by alsaeed          ###   ########.fr       */
+/*   Updated: 2024/05/01 15:47:30 by alsaeed          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ class Cat : public AAnimal {
 
 		Cat( void );
 		Cat( const Cat& source_object );
-		Cat&		operator=( const Cat& source_object );
+		Cat&	operator=( const Cat& source_object );
 		~Cat( void );
 
 		void		makeSound( void ) const;

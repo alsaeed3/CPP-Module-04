@@ -6,7 +6,7 @@
 /*   By: alsaeed <alsaeed@student.42abudhabi.ae>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/24 19:15:23 by alsaeed           #+#    #+#             */
-/*   Updated: 2024/04/27 15:11:16 by alsaeed          ###   ########.fr       */
+/*   Updated: 2024/05/01 15:56:31 by alsaeed          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,9 +36,6 @@ int main( void ) {
 
 	std::cout << "Animal of type: [ " << dog->getType() << " ] ,makes the following sound: ";
 	dog->makeSound();
-	std::cout << std::endl;
-
-	std::cout << "=============================================================================" << std::endl;
 	std::cout << std::endl;
 
 	std::cout << "*****************************************************************************" << std::endl;
